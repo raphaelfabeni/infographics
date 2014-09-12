@@ -1,0 +1,59 @@
+    [class^="ico-"], [class*=" ico-"] {
+        background-image: url("../img/sprite/sprite.png");
+        background-repeat: no-repeat;
+        display: inline-block;
+        line-height: 20px;
+        margin-top: 1px;
+        vertical-align: text-top;
+    }
+
+
+
+    .ico-android {
+        width: 137px;
+        height: 116px;
+        background-position: -371px 0px;
+    }
+
+
+    .ico-coracao {
+        width: 82px;
+        height: 82px;
+        background-position: -371px -332px;
+    }
+
+
+    .ico-female {
+        width: 107px;
+        height: 108px;
+        background-position: -371px -116px;
+    }
+
+
+    .ico-lupa {
+        width: 60px;
+        height: 60px;
+        background-position: -371px -414px;
+    }
+
+
+    .ico-male {
+        width: 108px;
+        height: 108px;
+        background-position: -371px -224px;
+    }
+
+
+    .ico-tim {
+        width: 371px;
+        height: 508px;
+        background-position: 0px 0px;
+    }
+
+
+    /*  HD devices
+        ========================================================================== */
+
+        @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+            //[class^="ico-"], [class*=" ico-"] { background-size: 0 0; }
+        }

@@ -1,0 +1,93 @@
+/*  ==========================================================================
+    Grid calc
+    ========================================================================== */
+
+/*  ==========================================================================
+    Grid
+    ========================================================================== */
+    body {
+        width: 100%;
+        @include clearfix();
+    }
+
+
+    @media only screen {
+
+        .container-graph { width: 100%; }
+        .container-static { text-align: center; }
+
+        .hold-graph {
+            @include clearfix();
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 100%;
+        }
+
+    }
+
+    /*
+     * CSS for devices with resolution higher than breakpoint
+     */
+
+    @media only screen and (min-width: $breakpoint) {
+
+        .container-graph { padding-top: 55px; }
+        .hold-graph { max-width: $gridWidth; }
+
+        /*  Intro
+            ========================================================================== */
+            .hold-title {
+                float: left;
+                width: 60%;
+                margin-right: 50px;
+            }
+
+            .hold-box {
+                float: left;
+                width: 32%;
+            }
+
+        /*  Products
+            ========================================================================== */
+            .products-list { @include clearfix(); }
+            .products-list li {
+                float: left;
+                width: 33%;
+            }
+
+        /*  Tweets
+            ========================================================================== */
+            .hold-genre {
+                float: left;
+                width: 42%;
+                //width: 322px;
+            }
+
+            .hold-states {
+                float: right;
+                width: 58%;
+            }
+
+            .state {
+                float: left;
+                width: 50%;
+            }
+
+            .img-state {
+                min-height: 150px;
+            }
+
+        /*  Speakers
+            ========================================================================== */
+            .speaker {
+                float: left;
+                width: 25%;
+            }
+
+        /*  End
+            ========================================================================== */
+            .graph-end .tim { float: right; }
+
+   }
